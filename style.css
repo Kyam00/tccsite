@@ -23,10 +23,12 @@ header{
     flex-wrap: nowrap;
     height: 20%;
     width: 100%;
+    
 }
 .menu ul{
     display: flex;
     list-style-type: none;
+    list-style: none;
 }
 .menu picture{
     display: flex;
@@ -34,15 +36,20 @@ header{
 }
 .menu li{
     padding: 1vw;
+    list-style-type: none;
+    list-style: none;
+    
+}
+.menu li:hover{
+    box-shadow: 0 1em 1em white;
+    background-color: white;
+    color: black;
 }
 .menu a{
     color: white;
 }
 .b1{
     width: 80vw;
-    background-image: url(imagens/b1.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
     display: flex;
     margin: auto;
     padding: 8vw;
@@ -51,18 +58,26 @@ header{
     align-items: center;
     margin-bottom: 1vh;
     color: white;
+    font-size: 1.5em;
 }
 p{
     margin: 1rem;
 }
 .b2{
     width: 98vw;
-    background-color: gray;
+    background-color: rgb(26, 24, 24);
+    margin: auto;
+    outline: 1px;
+    outline-style: solid;
+    outline-color: white;
 }
 .b2-1{
     display: flex;
     justify-content: center;
     padding: 2rem;
+    outline: 1px;
+    outline-style: solid;
+    outline-color: white;
     flex-direction: row;
 }
 .b2-2{
@@ -74,11 +89,19 @@ p{
     width: 48vw;
     background-color: rgba(0, 0, 0, 0.541);
     display: flex;
-    justify-content: center;
-    
+    outline: 1px;
+    outline-style: solid;
+    outline-color: white;
+    justify-content: center;  
+    align-items: center;  
+}
+.ima{
+    width: 8vw;
+    height: 12vh;
 }
 .b2-2-1 picture{
-    background-color: blue;
+    background-color: black;
+    
     width: 500px;
     height: 800px;
     padding: 2rem;
@@ -86,6 +109,9 @@ p{
 }
 .b2-2-2{
     width: 48vw;
+    outline: 1px;
+    outline-style: solid;
+    outline-color: white;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -102,12 +128,16 @@ p{
     align-items: center;
     
 }
-.b2-2-2-1-1{
+.deschab{
     width: 20vw;
-    background-color: blue;
+    background-color: black;
     outline: 1px;
     outline-style: solid;
     outline-color: white;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    min-height: 10vh;
+    height: auto;
 }
 footer{
     display: flex;
@@ -117,4 +147,153 @@ footer{
     padding: 1rem;
     height: 2vh;
     background-color: black;
+}
+.anidiv{
+    
+    width: 30vw;
+    height: 40vh;
+}
+.anidiv img{
+    animation: mymove infinite;
+    animation-name: mymove;
+    animation-duration: 5s;
+    width: 200px;
+    position: relative;
+}
+@keyframes mymove {
+    from {top: 1%}
+    50% {top: 50%}
+    to {top: 1%}
+}
+.logo{
+    width: 20%;
+}
+.contpat{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.contpat2{
+    display: flex;
+    justify-content: flex-start;
+}
+.patimg{
+    width: 80vw;
+    height: 40vh;
+    background-color: blue;
+    justify-self: flex-start;
+}
+.patimg img{
+    z-index: -1;
+}
+.download{
+    width: 80vw;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+.botao{
+    list-style: none;
+    color: white;
+}
+.botao li{
+    background-color: black;
+    border-width: 1px;
+    font-size: 2em;
+    padding: 1rem;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+}
+.botao a{
+    color: white;
+    text-decoration: none;
+}
+.botao li:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 0 16px 16px white;
+}
+.textpatreon{
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.textpatreon p{
+    margin-left: 0;
+    margin-right: 0;
+}
+.animapat{
+    background-color: red;
+    width: 80vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.animapat2{
+    margin: auto;
+    background-color: aqua;
+    margin-top: 10vh;
+    width: 98vw;
+    align-items: center;
+}
+.supart{
+    font-size: 3em;
+    width: 80;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.divform{
+    width: 40vw;
+    margin: auto;
+    background: black;
+    font: 2em 'Ink Free';
+
+}
+.divform form{
+    display: flex;
+    flex-direction: column;
+}
+.supani1{
+    display: flex;
+    justify-content: center;
+}
+.supani2{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+.supcont2{
+    width: 98vw;
+    display: flex;
+
+}
+.tudo{
+    display: none;
+}
+.olho{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.olho img{
+    width: 100%;
+    height: 100vh;
+    animation: olho infinite;
+    animation-name: olho;
+    animation-duration: 1s;
+}
+@keyframes olho {
+    0% {src: url("./imagens/olho1.png");}
+    25% {src: url("./imagens/olho2.png");}
+    50% {src: url("./imagens/olho3.png");}
+    75% {src: url("./imagens/olho4.png");}
+    100% {src: url("./imagens/olho1.png");}
 }
